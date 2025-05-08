@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: rgb(35, 92, 92);
+    width: 100%;
+    height: 20vh;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .goku {
+    
+    width: 5rem;
+  }
+  .animacion{
+    animation: animar 1s infinite alternate
+    
+  }
+  @keyframes animar{
+    to{
+        transform: translatey(20px)
+    }
+  }
+  .animax{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    top: 8vh;
+    
+  }
+  
+  .item
+   {
+    width: 100%;
+  }
+ 
+/* Estilo general para el contenedor de anime usando Grid */
+#anime-container {
+    display: grid;
+    grid-template-columns: repeat(4, .2fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre los ítems */
+    justify-content: center; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #f4f4f4;
+    background:linear-gradient(to right top,  #235c5c, #6d6969a7);
+    
+}
+
+/* Estilo para cada ítem de anime */
+.anime-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+/* Estilo para la imagen del anime */
+.anime-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+/* Estilo para el texto del anime */
+.anime-item p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #141414;
+    
+    
+}
+
+/* Efecto de hover para el ítem de anime */
+.anime-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Estilo para el contenedor de paginación */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #020911;
+    
+}
+
+/* Estilo para los botones de paginación */
+#pagination button {
+    background-color: #020911;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#pagination button:hover {
+    background-color: #0056b3;
+}
+
+#pagination #page-number {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+  .footer{
+    background-color: rgb(35, 92, 92);
+    color:#ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listaNav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        
+        .listaItem{
+          /*margin-left:20px;*/
+          margin-right: 20px;
+            .linkNav{
+                text-decoration: none;
+                color:#ffffff;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+            .administradorPeliculas{
+                /*background-color: #982fb3;*/
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+            }
+        }
+    }
+  }  

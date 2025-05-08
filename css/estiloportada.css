@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgb(35, 92, 92);
+  width: 100%;
+  height: 20vh;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  
+}
+.goku {
+  
+  width: 5rem;
+}
+.animacion{
+  animation: animar 1s infinite alternate
+  
+}
+@keyframes animar{
+  to{
+      transform: translatey(20px)
+  }
+}
+.animax{
+  color:white;
+  text-decoration: none;
+  position: relative;
+  top: 8vh;
+  
+}
+
+.item
+ {
+  width: 100%;
+}
+/*.mainDetalle {
+  
+  height: 120vh;
+  background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/Portada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+.sectionPrincipal{
+  color:white;
+  background:linear-gradient(to right top, #0000008a, #0000008a), url(../img/Portada.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  .tituloPrincipal{
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 10rem;/*1rem;*/
+      
+  }
+}
+.container-fluid {
+  animation: appear 5s ease forwards;
+  opacity: 0;
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.botonRegistrarse {
+  /*background-color: rgb(35, 92, 92);*/
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: 2px solid #0075FF;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: #000;
+	color: #fff;
+  cursor: pointer;
+	transition: .1s ease all;
+   /* Agregar efecto de botón presionado */
+   transition: transform 0.3s, box-shadow 0.3s;
+   &:hover {
+       background-color: linear-gradient(60deg,#0d6efd,#20c997);
+       transform: scale(0.95);
+       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+   }
+}
+.ingresar {
+  text-decoration: none;
+}
+.footer{
+  background-color: rgb(35, 92, 92);
+  color:#ffffff;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .listaNav{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      
+      .listaItem{
+        /*margin-left:20px;*/
+        margin-right: 20px;
+          .linkNav{
+              text-decoration: none;
+              color:#ffffff;
+              font-weight: 700;
+              font-size: 1.2rem;
+          }
+          .administradorPeliculas{
+              /*background-color: #982fb3;*/
+              color: white;
+              padding: 0.5rem 1rem;
+              border-radius: 5px;
+          }
+      }
+  }
+}
+

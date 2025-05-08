@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/usuario.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+
+            <div class="animacion">
+                <a href="indexPortada.html"><img class="goku" 
+                    src="img/goku2.png" alt=""></a>
+            </div>
+
+            <div class="sombra">
+
+            </div>
+            <h3><a class="animax" href="indexPortada.html">ANIME-ANIMAX</a></h3>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="login-form">
+                <div class="form-group" id="grupo__usuario">
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                    <i class="validation-icon"></i>
+                    <small class="formulario__input-error">El nombre de usuario es obligatorio.</small>
+                </div>
+    
+                <div class="form-group" id="grupo__password">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    <i class="validation-icon"></i>
+                    <small class="formulario__input-error">La contraseña es obligatoria.</small>
+                </div>
+    
+                <button type="submit">Iniciar Sesión</button>
+    
+                <div id="formulario__mensaje" class="formulario__mensaje">
+                    <p>Por favor, complete el formulario correctamente.</p>
+                </div>
+    
+                <div id="formulario__mensaje-exito" class="formulario__mensaje-exito">
+                    <p>¡Inicio de sesión exitoso!</p>
+                </div>
+    
+                <div class="forgot-password">
+                    <a href="indexPortada.html">¿Olvidó su usuario o contraseña?</a>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    
+    <footer class="footer">
+        <nav class="navegacion">
+            <div class="grid-container2">
+                <ul class="listaNav">
+                    <li class="listaItem">
+                        <a class="linkNav" href="indexPortada.html">Términos y condiciones</a>
+                    </li>
+                    <li class="listaItem">
+                        <a class="linkNav" href="indexPortada.html">Preguntas frecuentes</a>
+                    </li>
+                    <li class="listaItem">
+                        <a class="linkNav" href="indexPortada.html">Ayuda</a>
+                    </li>
+                    <li class="listaItem">
+                        <a class="linkNav administradorPeliculas" href="indexPortada.html">ANIME-ANIMAX | 
+                            PICTURES</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </footer>
+    <script src="js/usuario.js"></script> 
+</body>
+</html>

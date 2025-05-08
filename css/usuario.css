@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+    background-color: rgb(35, 92, 92);
+    width: 100%;
+    height: 20vh;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    
+}
+.goku {
+    
+    width: 5rem;
+}
+.animacion{
+    animation: animar 1s infinite alternate
+    
+}
+@keyframes animar{
+    to{
+        transform: translatey(20px)
+    }
+}
+.animax{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    top: 8vh;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+}
+main {
+    width: 100%;
+	height: 65vh;
+	margin: auto;
+	padding: 40px;
+    background: linear-gradient(to right top, #24242473,#24242473), url(../img/demon-slayer-1657889450.jpeg);/*#E5E5E5*/
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+.form-container {
+    color: white;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: transparent; /* Fondo transparente */
+   
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.validation-icon {
+    display: none; 
+}
+
+.formulario__input-error {
+    color: red;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    background: #000;
+	color: #fff;
+    cursor: pointer;
+	transition: .1s ease all;
+}
+
+button:hover {
+    background-color: #42f090a9;
+    
+}
+
+a {
+    color: #ededed;
+    text-decoration: none;
+}
+
+/*a:hover {
+    text-decoration: underline;
+}*/
+.forgot-password {
+    text-align: center; 
+    margin-top: 10px; 
+}
+.formulario__mensaje,
+.formulario__mensaje-exito {
+    display: none;
+}
+
+.formulario__mensaje-activo,
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+.footer{
+    background-color: rgb(35, 92, 92);
+    color:#ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listaNav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        .listaItem{
+            /*margin-left:20px;*/
+            margin-right: 20px;
+            .linkNav{
+                text-decoration: none;
+                color:#ffffff;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+            .administradorPeliculas{
+                /*background-color: #982fb3;*/
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+            }
+        }
+    }
+  }
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input {
+        padding: 6px;
+    }
+
+    button {
+        padding: 6px;
+    }
+}

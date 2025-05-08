@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgb(35, 92, 92);
+    width: 100%;
+    height: 20vh;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    
+}
+.goku {
+    
+    width: 5rem;
+}
+.animacion{
+    animation: animar 1s infinite alternate
+    
+}
+@keyframes animar{
+    to{
+        transform: translatey(20px)
+    }
+}
+.animax{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    top: 8vh;
+    
+}
+.boton {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.mainRegistro {
+    background-image: linear-gradient(to right top, #24242473,#24242473),url(../img/fondo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+    padding:30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    height: 80vh;
+    
+}
+.seccionRegistro {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    /*flex-direction:column;*/
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(211, 42, 42);
+}
+.tituloRegistro {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+/*.formulario {
+    width: 100%;
+    padding:40px;
+    width: 100%;
+}*/
+.contraseña,.usuario {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+}
+.radio {
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    background-color: rgb(35, 92, 92);
+    outline: none;
+    color:white;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+       background-color: linear-gradient(60deg,#0d6efd,#20c997);
+       transform: scale(0.95);
+       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    
+}
+#reg {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    background-color:rgb(35, 92, 92);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+       transform: scale(0.95);
+       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+   
+}
+.ayuda {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    
+}
+
+.footer{
+    background-color: rgb(35, 92, 92);
+    color:#ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listaNav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        .listaItem{
+            /*margin-left:20px;*/
+            margin-right: 20px;
+            .linkNav{
+                text-decoration: none;
+                color:#ffffff;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+            .administradorPeliculas{
+                /*background-color: #982fb3;*/
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+            }
+        }
+    }
+  }
