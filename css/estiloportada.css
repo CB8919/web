@@ -1,134 +1,183 @@
+/* Reset general */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Aseguramos que html y body ocupen toda la pantalla y sin scroll */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* elimina todo scroll */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
 .header {
-  background-color: rgb(35, 92, 92);
+  background-color: #16213E; /* Azul oscuro */
   width: 100%;
   height: 20vh;
 }
 .logo {
   display: flex;
   justify-content: center;
-  
 }
 .goku {
-  
   width: 5rem;
 }
 .animacion{
-  animation: animar 1s infinite alternate
-  
+  animation: animar 1s infinite alternate;
 }
 @keyframes animar{
   to{
-      transform: translatey(20px)
+      transform: translatey(20px);
   }
 }
 .animax{
-  color:white;
-  text-decoration: none;
+  color:#FFFFFF;
+  text-decoration: none; /* sin subrayado */
   position: relative;
   top: 8vh;
-  
 }
-
-.item
- {
+.item {
   width: 100%;
 }
-/*.mainDetalle {
-  
-  height: 120vh;
-  background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/Portada.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+
+/* Hero principal (ocupa toda la ventana restante) */
 .sectionPrincipal{
-  color:white;
-  background:linear-gradient(to right top, #0000008a, #0000008a), url(../img/Portada.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  .tituloPrincipal{
-      font-size: 4rem;
-      font-weight: 700;
-      margin-bottom: 10rem;/*1rem;*/
-      
-  }
+    width: 100%;
+    height: 59vh; /* o la altura que quieras */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* fondo */
+    background-image: linear-gradient(to right top, #0000008a, #0000008a),
+                      url(../img/image.png);
+    background-size: cover;       /* llena todo el contenedor */
+    background-repeat: no-repeat; /* no repetir la imagen */
+    background-position: center;  /* centrada */
 }
+.sectionPrincipal .tituloPrincipal{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor animado */
 .container-fluid {
   animation: appear 5s ease forwards;
   opacity: 0;
 }
 @keyframes appear{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
 }
+
+/* Botón registrarse */
 .botonRegistrarse {
-  /*background-color: rgb(35, 92, 92);*/
   color: #ffffff;
   padding: 1rem 2rem;
-  border: 2px solid #0075FF;
+  border: 2px solid #533483; /* violeta */
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
-  background: #000;
-	color: #fff;
+  background: #0F3460; /* azul brillante */
   cursor: pointer;
-	transition: .1s ease all;
-   /* Agregar efecto de botón presionado */
-   transition: transform 0.3s, box-shadow 0.3s;
-   &:hover {
-       background-color: linear-gradient(60deg,#0d6efd,#20c997);
-       transform: scale(0.95);
-       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-   }
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
+.botonRegistrarse:hover {
+  background: linear-gradient(60deg,#533483,#6C4AB6); /* degradado violeta */
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 .ingresar {
   text-decoration: none;
 }
+
+/* Footer */
 .footer{
-  background-color: rgb(35, 92, 92);
+  background-color: #16213E;
   color:#ffffff;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  .listaNav{
-      list-style: none;
-      display: flex;
-      align-items: center;
-      
-      .listaItem{
-        /*margin-left:20px;*/
-        margin-right: 20px;
-          .linkNav{
-              text-decoration: none;
-              color:#ffffff;
-              font-weight: 700;
-              font-size: 1.2rem;
-          }
-          .administradorPeliculas{
-              /*background-color: #982fb3;*/
-              color: white;
-              padding: 0.5rem 1rem;
-              border-radius: 5px;
-          }
-      }
+}
+.footer .listaNav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.footer .listaItem{
+  margin-right: 20px;
+}
+.footer .linkNav{
+  text-decoration: none; /* sin subrayado */
+  color:#EDEDED;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.footer .administradorPeliculas{
+  background-color: #533483; /* violeta */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Global links */
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+a:hover {
+  text-decoration: none;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 15vh;
+  }
+
+  .sectionPrincipal {
+    height: 70vh;
+    padding: 1.5rem 1rem;
+    background-position: top;
+    box-sizing: border-box;
+  }
+
+  .sectionPrincipal .tituloPrincipal {
+    font-size: 1.8rem;
+  }
+
+  .botonRegistrarse {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .footer {
+    height: 15vh;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .footer .listaNav {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .animax {
+    font-size: 1rem;
+    top: 2vh;
   }
 }
+
 
