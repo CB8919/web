@@ -154,3 +154,31 @@
         }
     }
   }
+
+  /* Media query para pantallas hasta 768px (tablets y móviles) */
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto; /* se ajusta al contenido */
+    padding: 1rem 0;
+    flex-direction: column; /* apila los elementos verticalmente */
+    text-align: center;
+  }
+
+  .footer .listaNav {
+    flex-direction: column; /* apila los links */
+    gap: 10px; /* espacio entre items */
+  }
+
+  .footer .listaNav .listaItem {
+    margin-right: 0; /* quita el margen lateral */
+  }
+
+  .footer .listaNav .listaItem .linkNav {
+    font-size: 1rem; /* reduce el tamaño de letra */
+  }
+
+  .footer .listaNav .listaItem .administradorPeliculas {
+    padding: 0.4rem 0.8rem; /* reduce padding */
+    font-size: 1rem; /* ajusta tamaño de letra */
+  }
+}
